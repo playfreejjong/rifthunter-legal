@@ -31,25 +31,29 @@
 <!-- ===================== 한국어 ===================== -->
 <section id="ko">
 <h1>균열의헌터 개인정보처리방침</h1>
-<p class="meta">시행일: 2026년 9월 12일 (개정 시행일: 【사업자등록 후 확정】) · 개발자: playfreejjong(【사업자등록증상 상호 · 대표자 성명】) · 문의: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
+<p class="meta">시행일: 2026년 9월 12일 · 개인 우편 관련 개정일: 2026년 10월 8일 · 개발자: playfreejjong(【사업자등록증상 상호 · 대표자 성명】) · 문의: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
 
 <p>playfreejjong(이하 "개발자")은 모바일 게임 「균열의헌터」(패키지명 com.freejjong.rifthunter, 이하 "앱")를 이용하는 이용자의 개인정보를 「개인정보 보호법」 등 관련 법령에 따라 보호하기 위해 다음과 같이 개인정보처리방침을 수립·공개합니다.</p>
 
 <h2>1. 처리하는 개인정보 항목 및 수집 방법</h2>
-<p>개발자는 회원가입을 받지 않으며, 별도의 게임 서버를 운영하지 않습니다. 앱이 처리하는 정보는 아래와 같습니다.</p>
+<p>게임의 일반 플레이는 별도 회원가입 없이 이용할 수 있습니다. 이용자가 개인 우편 연결을 직접 선택하면 Google Play 게임즈 본인 확인 후 개발자가 직접 운영하는 개인 우편 서버에 계정 연결 정보를 저장합니다. 앱이 처리하는 정보는 아래와 같습니다.</p>
 <div class="scroll"><table>
 <tr><th>구분</th><th>항목</th><th>수집 방법</th></tr>
 <tr><td>광고 제공</td><td>광고 ID(Google 광고 ID), 기기 정보(모델, OS 버전, 언어, 국가), IP 주소, 광고 노출·클릭·보상 지급 기록</td><td>앱 최초 실행 시 표시되는 개인정보 안내에서 이용자가 "동의하고 시작"을 선택한 경우에만 광고 SDK(Unity LevelPlay)를 시작하며, 이후 앱 실행 및 광고 요청 시 SDK가 자동 수집. 동의는 게임 안 설정 &gt; 계정/데이터 &gt; 광고 데이터 전송 동의에서 언제든 철회 가능</td></tr>
 <tr><td>로그인·클라우드 저장</td><td>Google Play 게임즈 플레이어 ID, 닉네임·프로필 이미지, 게임 진행 데이터</td><td>이용자가 Google Play 게임즈에 로그인할 때 Google을 통해 제공. 게임 진행 데이터는 이용자 본인의 Google 계정(Google Drive의 앱 전용 저장 공간)에 저장</td></tr>
+<tr><td>개인 우편 연결·수령</td><td>Google에서 검증한 Play 게임즈 플레이어 ID, 서버가 발급한 우편 수신 ID(UUID), 문의용 게임 ID(GUID), 닉네임, 앱 빌드·연동 규약 버전, 설치 ID(UUID), 계정 연결·접속 시각, 우편 발송 내용·보상 및 수령 처리 기록</td><td>이용자가 개인 우편 연결을 선택하면 앱과 Google 본인 확인을 통해 제공. 개발자의 자체 운영 서버(PostgreSQL)에 저장</td></tr>
+<tr><td>개인 우편 서버 운영·보안</td><td>IP 주소, 요청 시각, 접속 경로 등 서버 접근 기록</td><td>개인 우편 서버에 HTTPS로 접속할 때 서버 접근 로그에 기록될 수 있음</td></tr>
 <tr><td>인앱 결제</td><td>구매한 상품 ID, 주문 번호, 구매 토큰, 구매 일시</td><td>Google Play 결제 시스템을 통해 제공. 카드번호 등 결제 수단 정보는 Google이 처리하며 개발자는 받지 않습니다.</td></tr>
 <tr><td>고객 문의</td><td>이메일 주소, 문의 내용</td><td>이용자가 이메일로 문의할 때 직접 제공</td></tr>
 <tr><td>기기 내 저장</td><td>게임 진행 데이터, 설정값</td><td>이용자 기기에만 저장되며 개발자에게 전송되지 않음</td></tr>
 </table></div>
+<p>개인 우편 연결을 위해 이메일 주소, Google 전체 프로필, 전체 보유 재화·아이템 잔액이나 결제 이력을 추가로 수집하지 않습니다. Google 인증 코드와 Google 액세스·갱신 토큰은 본인 확인에 일시적으로 사용하며 서버에 저장하지 않습니다. 개인 우편 서버 세션은 원문 토큰 대신 해시를 저장하며 유효기간은 30분입니다. 닉네임과 문의용 게임 ID는 계정을 찾는 참고 정보이며, 본인 확인은 Google Play 게임즈로 진행합니다.</p>
 
 <h2>2. 개인정보의 처리 목적</h2>
 <ul>
   <li>광고 게재 및 보상형 광고 시청에 따른 게임 내 보상 지급, 광고 성과 측정 및 부정 이용 방지</li>
   <li>Google Play 게임즈 로그인 및 게임 진행 데이터의 클라우드 저장·복원</li>
+  <li>개인 우편 수신자 확인, 지정한 계정으로 보상 발송·수령 처리, 같은 보상의 중복 지급 방지, 설치별 중단 복구 및 관련 문의·보안 대응</li>
   <li>Google Play 게임즈 리더보드(균열 폭주 최고 기록): 로그인한 이용자의 닉네임·프로필 이미지와 기록이 리더보드에 게시되어 다른 이용자에게 공개됩니다. 공개 범위는 Google Play 게임즈 프로필 설정을 따르며, 로그인하지 않으면 게시되지 않습니다.</li>
   <li>인앱 상품 구매 확인, 아이템 지급, 환불 처리</li>
   <li>이용자 문의 응대 및 오류 대응</li>
@@ -60,6 +64,10 @@
   <li>고객 문의: 문의 처리 완료 후 1년간 보관 후 파기</li>
   <li>기기 내 저장 데이터: 앱 삭제 시 함께 삭제</li>
   <li>클라우드 저장 데이터: 이용자가 Google Play 게임즈 또는 Google 계정 설정에서 삭제할 때까지 이용자 본인의 Google 계정에 보관</li>
+  <li>개인 우편 계정 연결·프로필: 개인 우편 서비스를 이용하는 동안 보관합니다. 본인 확인을 거쳐 계정을 삭제하면 Google Play 게임즈 연결 정보, 문의용 게임 ID, 닉네임, 앱 빌드·연동 규약 버전과 서버 세션을 즉시 삭제하거나 비웁니다.</li>
+  <li>개인 우편 발송·수령 및 감사 기록: 중복 지급 방지와 처리 분쟁 확인을 위해 계정 삭제 후 90일간 수신 ID에 연결된 기록을 보관합니다. 이후 정기 정리 작업에서 계정·우편·수령·설치 및 요청 식별자 기록을 삭제하고, 감사 기록의 이용자 연결 정보와 사유를 제거해 익명화합니다.</li>
+  <li>장애 복구용 개인 우편 DB 백업은 90일 순환 보관하며, 90일이 지난 백업은 다음 정상 백업 작업에서 삭제합니다. 복원 시 이미 접수된 삭제 처리를 다시 반영한 뒤 서비스를 재개합니다.</li>
+  <li>개인 우편 서버의 만료 세션은 정기적으로 삭제합니다. 운영·보안용 웹 프록시 로그는 현재 기록 중인 로그 외에, 주간 회전한 접근 로그 4개와 오류 로그 10개까지 보관한 뒤 순환 삭제합니다.</li>
   <li>광고 SDK 및 Google이 수집하는 정보: 각 사업자의 개인정보처리방침에 따른 기간</li>
 </ul>
 
@@ -68,10 +76,10 @@
 <div class="scroll"><table>
 <tr><th>이전받는 자</th><th>국가</th><th>항목</th><th>목적</th><th>보유·이용 기간</th></tr>
 <tr><td>Unity Technologies (LevelPlay) 및 LevelPlay를 통해 연동되는 광고 네트워크<br><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">개인정보처리방침</a></td><td>미국 등</td><td>1번 표의 "광고 제공" 항목</td><td>광고 게재, 맞춤형 광고, 광고 성과 측정, 부정 이용 방지</td><td>각 사 정책에 따름</td></tr>
-<tr><td>Google LLC<br><a href="https://policies.google.com/privacy">개인정보처리방침</a></td><td>미국</td><td>1번 표의 "로그인·클라우드 저장", "인앱 결제" 항목</td><td>Google Play 게임즈 로그인·클라우드 저장, 인앱 결제 처리</td><td>Google 정책에 따름</td></tr>
+<tr><td>Google LLC<br><a href="https://policies.google.com/privacy">개인정보처리방침</a></td><td>미국</td><td>1번 표의 "로그인·클라우드 저장", "인앱 결제" 항목 및 개인 우편 연결의 Google 인증 코드·플레이어 ID 확인 요청</td><td>Google Play 게임즈 로그인·클라우드 저장, 개인 우편 본인 확인, 인앱 결제 처리</td><td>Google 정책에 따름</td></tr>
 </table></div>
 <p><strong>이전 근거:</strong> 광고 제공 목적의 국외 이전은 「개인정보 보호법」 제28조의8 제1항 제1호에 따라 이용자의 별도 동의(앱 최초 실행 시 안내 화면)를 받아 이전하며, 로그인·클라우드 저장·결제 목적의 이전은 이용자가 해당 기능을 직접 실행할 때 계약의 이행을 위해 이루어집니다.<br>
-<strong>이전 시기 및 방법:</strong> 앱 실행, 광고 요청, 로그인, 결제 시 암호화된 네트워크를 통해 전송됩니다.<br>
+<strong>이전 시기 및 방법:</strong> 앱 실행, 광고 요청, 로그인, 개인 우편 연결의 본인 확인, 결제 시 암호화된 네트워크를 통해 전송됩니다.<br>
 <strong>거부 방법 및 효과:</strong> 기기의 설정 &gt; Google &gt; 광고에서 광고 ID를 삭제하거나 맞춤 광고를 해제할 수 있고, 광고 화면의 개인정보 아이콘으로도 맞춤 광고를 거부할 수 있습니다. 거부해도 게임은 이용할 수 있으나 비맞춤형 광고가 표시될 수 있습니다. Google Play 게임즈에 로그인하지 않으면 클라우드 저장을 이용할 수 없습니다.</p>
 
 <h2>5. 개인정보의 파기 절차 및 방법</h2>
@@ -79,10 +87,12 @@
 
 <h2>6. 이용자의 권리와 행사 방법</h2>
 <p>이용자는 언제든지 개인정보의 열람, 정정, 삭제, 처리 정지를 요구할 수 있습니다. 아래 이메일로 요청하시면 10일 이내에 조치 결과를 알려드립니다. 만 14세 미만 아동의 법정대리인도 같은 방법으로 권리를 행사할 수 있습니다. 광고 SDK와 Google이 보유한 정보는 각 사업자의 방침에 따라 해당 사업자에게 직접 요청할 수도 있습니다.</p>
+<p>개인 우편 계정은 인터넷 연결 및 해당 Google Play 게임즈 로그인 상태에서 설정 &gt; 계정/데이터 &gt; 계정 삭제(탈퇴)로 삭제하거나, 이메일로 본인 확인 후 삭제를 요청할 수 있습니다. 앱 삭제나 로컬 데이터 초기화만으로 서버 데이터가 삭제되지는 않습니다. 자세한 방법과 보관 기록은 <a href="delete-data.html#personal-mail">개인 우편 데이터 삭제 안내</a>를 확인해 주세요.</p>
 
 <h2>7. 개인정보의 안전성 확보 조치</h2>
 <ul>
-  <li>필요한 최소한의 정보만 처리하며, 개발자는 별도 서버에 개인정보를 저장하지 않습니다.</li>
+  <li>개인 우편 서버에는 해당 기능에 필요한 최소 정보만 저장하고 운영자 접근을 제한합니다.</li>
+  <li>Google 인증 코드·Google 액세스·갱신 토큰을 저장하지 않으며, 개인 우편 서버 세션 토큰은 해시로 관리합니다.</li>
   <li>외부 전송 시 암호화된 통신(HTTPS)을 사용합니다.</li>
   <li>문의 메일은 접근이 제한된 개발자 계정에서만 관리합니다.</li>
 </ul>
@@ -110,6 +120,7 @@
 <ul>
   <li>【개정 시행일】: 사업자 정보·보호책임자 성명 기재, 광고 데이터 국외 이전의 동의 절차(앱 최초 실행 안내·설정 철회) 추가, 데이터 삭제 안내 페이지 연결.</li>
   <li>2026년 9월 26일: 처리 목적에 Google Play 게임즈 리더보드(닉네임·기록 공개 게시)를 추가했습니다.</li>
+  <li>2026년 10월 8일: 선택형 개인 우편의 Google 본인 확인, 자체 서버 수집 항목·보유 기간과 계정 삭제 후 90일 정리 절차를 추가했습니다.</li>
 </ul>
 </section>
 
@@ -118,44 +129,51 @@
 <!-- ===================== English ===================== -->
 <section id="en" lang="en">
 <h1>RiftHunter (균열의헌터) Privacy Policy</h1>
-<p class="meta">Effective: September 12, 2026 · Developer: playfreejjong (individual developer) · Contact: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
+<p class="meta">Effective: September 12, 2026 · Personal mail update: October 8, 2026 · Developer: playfreejjong (individual developer) · Contact: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
 
-<p>This policy explains how the mobile game RiftHunter (package com.freejjong.rifthunter, the "App") handles information. The developer does not offer account registration and does not operate its own game server.</p>
+<p>This policy explains how the mobile game RiftHunter (package com.freejjong.rifthunter, the "App") handles information. General gameplay does not require separate account registration. If you choose to connect personal mail, we verify your identity through Google Play Games and store account connection information on the developer's self-hosted personal mail server.</p>
 
 <h2>1. Information we process</h2>
 <ul>
   <li><strong>Advertising:</strong> Only after you choose "Agree and start" on the privacy notice shown at first launch, the Unity LevelPlay SDK in the App collects the advertising ID, device information (model, OS version, language, country), IP address, and ad impression, click and reward records to show ads and grant in-game rewards. You can withdraw this consent at any time in Settings &gt; Account/Data &gt; Ad data transfer consent; only rewarded ads stop working.</li>
   <li><strong>Sign-in and cloud save:</strong> When you sign in to Google Play Games, Google provides your player ID, display name and avatar. Game progress is saved to your own Google account (the App's private area in Google Drive).</li>
+  <li><strong>Personal mail:</strong> When you choose to connect, the App and Google verification provide your verified Play Games player ID, a server-issued mail recipient ID (UUID), your game ID (GUID) used for support lookup, nickname, app build and protocol version, installation ID (UUID), account connection and last-seen times, and mail content, rewards and claim processing records. These are stored in PostgreSQL on the developer's self-hosted server.</li>
+  <li><strong>Personal mail server operation and security:</strong> HTTPS requests may generate server access logs containing your IP address, request time and accessed path.</li>
   <li><strong>In-app purchases:</strong> Product ID, order number, purchase token and time are provided through Google Play Billing. Payment card details are handled by Google and are never shared with the developer.</li>
   <li><strong>Support:</strong> Your email address and message when you contact us.</li>
   <li><strong>On-device data:</strong> Game progress and settings stored only on your device.</li>
 </ul>
+<p>Connecting personal mail does not additionally collect your email address, full Google profile, full currency or item balances, or purchase history. Google authorization codes and Google access or refresh tokens are used temporarily for verification and are not stored on the server. Personal mail sessions are valid for 30 minutes; the server stores a hash rather than the original session token. Nicknames and game IDs help locate accounts for support; Google Play Games verifies account ownership.</p>
 
 <h2>2. Why we use it</h2>
 <p>To show ads and grant rewarded-ad rewards, measure ad performance and prevent fraud; to provide Google Play Games sign-in and cloud save; to post your nickname, profile image and best record to the Google Play Games leaderboard, where other players can see them (only when signed in; visibility follows your Google Play Games profile settings); to verify purchases and deliver items; and to answer support requests.</p>
+<p>Personal mail information is used to verify recipients, send and process rewards for the designated account, prevent duplicate grants, recover interrupted processing for each installation, and handle related support and security issues.</p>
 
 <h2>3. Third parties and international transfer</h2>
-<p>Information is sent over encrypted connections, when the App runs, requests an ad, signs in or processes a purchase, to:</p>
+<p>Information is sent over encrypted connections, when the App runs, requests an ad, signs in, verifies a personal mail connection or processes a purchase, to:</p>
 <ul>
   <li>Unity Technologies (LevelPlay) and ad networks mediated through LevelPlay (United States and other countries), for advertising: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity privacy policy</a></li>
-  <li>Google LLC (United States), for Play Games sign-in, cloud save and billing: <a href="https://policies.google.com/privacy">Google privacy policy</a></li>
+  <li>Google LLC (United States), for Play Games sign-in, cloud save, personal mail identity verification using an authorization code and player ID verification request, and billing: <a href="https://policies.google.com/privacy">Google privacy policy</a></li>
 </ul>
 <p>Each provider keeps data according to its own policy.</p>
 
 <h2>4. Retention</h2>
 <p>Support emails are kept for 1 year after the request is resolved. On-device data is deleted when you uninstall the App. Cloud saves stay in your Google account until you delete them.</p>
+<p>Personal mail account information is kept while you use the service. After an authenticated account deletion, we immediately remove or clear your Play Games link, support game ID, nickname, app build, protocol version and server sessions. Mail, claim and audit records linked to the recipient ID are retained for 90 days after deletion to prevent duplicate grants and resolve processing disputes. A scheduled cleanup then deletes the account, mail, claim, installation and request identifier records, and anonymizes audit records by removing player links and reasons. Database recovery backups rotate on a 90-day schedule; backups older than 90 days are removed by the next successful backup job. Previously accepted deletions must be reapplied before a restored service resumes. Expired sessions are deleted periodically. In addition to the current log files, the web proxy retains up to 4 weekly rotated access logs and 10 weekly rotated error logs for operation and security before removing older logs.</p>
 
 <h2>5. Your choices and rights</h2>
 <p>You can reset or delete your advertising ID or opt out of personalized ads in your device settings (Settings &gt; Google &gt; Ads), or through the privacy icon shown in ads. You will still see non-personalized ads. You may request access to, correction of, or deletion of your information by emailing us. We will respond within 10 days.</p>
+<p>To delete your personal mail account in the App, use Settings &gt; Account/Data &gt; Delete account while online and signed in to the same Google Play Games account. You can also request deletion by email after ownership verification. Resetting local data or uninstalling alone does not delete server data. See <a href="delete-data.html#personal-mail-en">Data deletion instructions</a> for details.</p>
 
 <h2>6. Children</h2>
 <p>The App is not primarily directed at children under 14, and we do not knowingly collect their personal information. If we learn that we have, we will delete it promptly.</p>
 
 <h2>7. Security</h2>
-<p>We process only the minimum information needed, use encrypted (HTTPS) transmission, and do not store personal information on our own servers.</p>
+<p>We process only the minimum information needed, use encrypted (HTTPS) transmission, and restrict operator access to the personal mail server. Google authorization codes and Google access or refresh tokens are not stored; personal mail session tokens are stored as hashes.</p>
 
 <h2>8. Changes and contact</h2>
 <p>We will post any changes on this page with a new effective date. Questions: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
+<p>October 8, 2026: Added optional personal mail verification, self-hosted server data collection and retention, and cleanup 90 days after account deletion.</p>
 </section>
 
 </main>
