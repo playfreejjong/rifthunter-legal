@@ -44,6 +44,7 @@
 <tr><td>개인 우편 연결·수령</td><td>Google에서 검증한 Play 게임즈 플레이어 ID, 서버가 발급한 우편 수신 ID(UUID), 문의용 게임 ID(GUID), 닉네임, 앱 빌드·연동 규약 버전, 설치 ID(UUID), 계정 연결·접속 시각, 우편 발송 내용·보상 및 수령 처리 기록</td><td>이용자가 개인 우편 기능을 사용할 때 또는 설정에서 개인 우편 수신에 동의하면 앱과 Google 본인 확인을 통해 제공. 개발자의 자체 운영 서버(PostgreSQL)에 저장</td></tr>
 <tr><td>온라인 기능 서버 운영·보안</td><td>IP 주소, 요청 시각, 접속 경로 등 서버 접근 기록</td><td>우편·쿠폰·선택 통계 서버에 HTTPS로 접속할 때 서버 접근 로그에 기록될 수 있음</td></tr>
 <tr><td>인앱 결제</td><td>구매한 상품 ID, 주문 번호, 구매 토큰, 구매 일시</td><td>Google Play 결제 시스템을 통해 제공. 카드번호 등 결제 수단 정보는 Google이 처리하며 개발자는 받지 않습니다.</td></tr>
+<tr><td>Unity IAP 구매 연동</td><td>상품·가격·통화·수량, 주문번호·구매 영수증(구매 토큰 포함)·서명, 실패 사유, 설치·세션 식별자, 앱·SDK 버전·설치 정보, 기기 모델·OS 버전·언어/지역 설정·부팅 시각·저장공간 용량, 통신 과정의 IP 주소</td><td>구매 시작·완료·실패·지급 확정 과정에서 Unity IAP가 Unity 서버로 전송할 수 있습니다. 엔진 진단 설정·광고 선택 동의·운영자의 선택 플레이 통계와는 별도의 구매 처리 경로입니다.</td></tr>
 <tr><td>고객 문의</td><td>이메일 주소, 문의 내용</td><td>이용자가 이메일로 문의할 때 직접 제공</td></tr>
 <tr><td>기기 내 저장</td><td>게임 진행 데이터, 설정값, 개인 우편 수신 ID·수령 영수증·기기별 복구 기록</td><td>이용자 기기에 저장. 클라우드 저장을 사용하면 게임 진행 데이터와 개인 우편 수신 ID·수령 영수증은 이용자 본인의 Google 계정에도 백업. 설치 ID와 처리 중인 기기별 복구 기록은 이 클라우드 백업에서 제외</td></tr>
 <tr><td>쿠폰 등록·보상 우편 발급</td><td>입력한 쿠폰 코드, 요청·캠페인·사용·발급 우편 식별자, 처리 시각, 온라인 서비스 고지 동의 기록, 검증된 Google 식별자를 캠페인별로 변환한 중복 방지값(HMAC)</td><td>새 온라인 서비스 안내에 명시적으로 동의한 뒤 등록 요청 시 전송. 서버는 원문 쿠폰 코드를 저장하거나 로그에 남기지 않으며, 앱은 결과가 불확실한 요청의 재시도를 위해 코드를 일시 보관</td></tr>
@@ -108,6 +109,7 @@
 
 <h2>6. 이용자의 권리와 행사 방법</h2>
 <p>이용자는 언제든지 개인정보의 열람, 정정, 삭제, 처리 정지를 요구할 수 있습니다. 아래 이메일로 요청하시면 10일 이내에 조치 결과를 알려드립니다. 만 14세 미만 아동의 법정대리인도 같은 방법으로 권리를 행사할 수 있습니다. 광고 SDK와 Google이 보유한 정보는 각 사업자의 방침에 따라 해당 사업자에게 직접 요청할 수도 있습니다.</p>
+<p><strong>Unity IAP 구매 정보:</strong> 운영자 문의처(<a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a>)로 열람·삭제를 요청할 수 있습니다. 운영자는 본인 확인과 요청 범위를 검토한 뒤 필요한 요청을 Unity IAP 담당(<a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a>)에 전달합니다. Unity가 독립적으로 처리하는 정보는 같은 Unity IAP 담당 주소에 직접 요청할 수 있습니다. Unity에 전달이 필요한 경우 10일 이내 안내에는 요청 전달 여부와 처리 진행 상황을 포함하며, Unity의 처리 완료를 의미하지는 않습니다. 앱 삭제나 기기 데이터 초기화만으로 Unity가 보관한 구매 정보가 삭제되지는 않습니다. <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/overview">Unity IAP 개인정보·권리행사 안내</a></p>
 <p>개인 우편 계정은 인터넷 연결 및 해당 Google Play 게임즈 로그인 상태에서 설정 &gt; 계정/데이터 &gt; 계정 삭제(탈퇴)로 삭제하거나, 이메일로 본인 확인 후 삭제를 요청할 수 있습니다. 앱 삭제나 로컬 데이터 초기화만으로 서버 데이터가 삭제되지는 않습니다. 자세한 방법과 보관 기록은 <a href="delete-data.html#personal-mail">개인 우편 데이터 삭제 안내</a>를 확인해 주세요.</p>
 
 <h2>7. 개인정보의 안전성 확보 조치</h2>
@@ -143,6 +145,7 @@
 <ul>
   <li>【개정 시행일】: 광고 데이터 국외 이전의 동의 절차(앱 최초 실행 안내·설정 철회) 추가, 데이터 삭제 안내 페이지 연결.</li>
   <li>2026년 10월 12일: 사업자등록증에 따라 상호·대표자·사업자등록번호·사업장 주소와 개인정보 보호책임자 성명·고객지원 전화번호를 기재했습니다.</li>
+  <li>2026년 10월 12일: Unity IAP의 구매 처리 기록 전송 항목과 구매 정보 열람·삭제 요청 경로를 보완했습니다.</li>
   <li>2026년 9월 26일: 처리 목적에 Google Play 게임즈 리더보드(닉네임·기록 공개 게시)를 추가했습니다.</li>
   <li>2026년 10월 8일: 선택형 개인 우편의 Google 본인 확인, 자체 서버 수집 항목·보유 기간과 계정 삭제 후 90일 정리 절차를 추가했습니다.</li>
   <li>2026년 10월 8일 추가 개정: 개인 우편 연결의 선택권과 미연결 시 영향, 계정 식별정보 보호, 클라우드 백업 범위, Google 인증에 전달하는 정보, 삭제 후 남는 기록과 백업의 보관 범위를 명확히 했습니다.</li>
@@ -167,6 +170,7 @@
   <li><strong>Personal mail:</strong> When personal mail is connected (only after you agree when using the feature or in Settings &gt; Account/Data &gt; Personal mail account), the App and Google verification provide your verified Play Games player ID, a server-issued mail recipient ID (UUID), your game ID (GUID) used for support lookup, nickname, app build and protocol version, installation ID (UUID), account connection and last-seen times, and mail content, rewards and claim processing records. These are stored in PostgreSQL on the developer's self-hosted server.</li>
   <li><strong>Online service operation and security:</strong> HTTPS requests may generate server access logs containing your IP address, request time and accessed path.</li>
   <li><strong>In-app purchases:</strong> Product ID, order number, purchase token and time are provided through Google Play Billing. Payment card details are handled by Google and are never shared with the developer.</li>
+  <li><strong>Unity IAP purchase integration:</strong> When a purchase is started, paid, failed or fulfilled, Unity IAP may send product, price, currency and quantity information, order numbers, purchase receipts (including purchase tokens) and signatures, failure reasons, installation and session identifiers, app/SDK versions and installation information, device model, OS version, language/region settings, device boot time and storage capacity to Unity servers. Network communication also involves your IP address. This purchase-processing path is separate from engine diagnostics settings, optional advertising consent and the developer's optional play analytics.</li>
   <li><strong>Support:</strong> Your email address and message when you contact us.</li>
   <li><strong>On-device data:</strong> Game progress, settings, personal mail recipient ID, claim receipts and per-installation recovery records are stored on your device. When cloud save is used, game progress, the personal mail recipient ID and claim receipts are also backed up to your own Google account. The installation ID and pending per-installation recovery records are excluded from this cloud backup.</li>
 </ul>
@@ -201,6 +205,7 @@
 <p>Coupon redemption linkage is removed 90 days after account deletion for deleted accounts, or 90 days after campaign expiry for active accounts. Non-personal cumulative campaign counts remain. Campaign-specific duplicate-prevention values prevent repeated use after deleting and reconnecting the same Google account and are not retained permanently.</p>
 <h2>5. Your choices and rights</h2>
 <p>You can reset or delete your advertising ID or opt out of personalized ads in your device settings (Settings &gt; Google &gt; Ads), or through the privacy icon shown in ads. You will still see non-personalized ads. You may request access to, correction of, or deletion of your information by emailing us. We will respond within 10 days.</p>
+<p><strong>Unity IAP purchase data:</strong> Request access or deletion through <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a>. After verifying ownership and the scope of the request, we forward requests that require Unity's action to <a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a>. For data Unity processes independently, you may contact the same Unity IAP address directly. When Unity action is needed, our response within 10 days includes whether we forwarded the request and its processing status; it does not mean that Unity has completed processing. Uninstalling the App or resetting device data does not itself delete purchase data held by Unity. See <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/overview">Unity IAP privacy and data-subject request guidance</a>.</p>
 <p>To delete your personal mail account in the App, use Settings &gt; Account/Data &gt; Delete account while online and signed in to the same Google Play Games account. You can also request deletion by email after ownership verification. Resetting local data or uninstalling alone does not delete server data. See <a href="delete-data.html#personal-mail-en">Data deletion instructions</a> for details.</p>
 
 <h2>6. Children</h2>
@@ -213,6 +218,7 @@
 <h2>8. Changes and contact</h2>
 <p>Business name: 플레이프리쫑 (service name: playfreejjong)<br>Representative and privacy officer: 최원종<br>Business registration number: 747-07-03314<br>Support phone: <a href="tel:+821083703017">+82 10-8370-3017</a><br>Business address (Korean): 서울특별시 구로구 구로중앙로 207, B1층 B36-가4호(구로동, 오퍼스1)</p>
 <p>October 12, 2026: Added the registered business name, representative, business registration number, business address, privacy officer and support phone.</p>
+<p>October 12, 2026: Added Unity IAP purchase-event data and access/deletion request instructions.</p>
 <p>October 11, 2026: Added coupon and optional play analytics data, purposes, retention and withdrawal, and consent at feature use. New collection starts only after the applicable notice and explicit consent.</p>
 <p>We will post any changes on this page with a new effective date. Questions: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
 <p>October 8, 2026: Added optional personal mail verification, self-hosted server data collection and retention, and cleanup 90 days after account deletion.</p>
