@@ -29,7 +29,7 @@
 
 <section id="ko" lang="ko">
 <h1>균열의헌터 확률형 아이템 정보</h1>
-<p class="meta">1.0.143 기준, 2026-10-19 개정 · 적용: 게임 버전 1.0.143 이상(수호령 전설 보너스는 1.0.97부터) · 운영자: 플레이프리쫑 (playfreejjong) · 문의: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
+<p class="meta">2026-10-27 개정 · 적용: 게임 버전 1.0.143 이상(수호령 전설 보너스는 1.0.97부터, 최초 클리어 원석·반복 직접 전투 추가 원석 20%는 2026-10-27 이후 업데이트부터) · 운영자: 플레이프리쫑 (playfreejjong) · 문의: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
 
 <p>이 페이지는 「게임산업진흥에 관한 법률」 제33조 제2항 및 시행령에 따른 확률형 아이템 정보 표시입니다. 게임 안의 설정 &gt; 확률 정보, 원석 소환 화면, 각 스테이지 도움말에서도 같은 내용을 볼 수 있습니다. 게임 안 표시는 실제 추첨 표에서 실시간으로 생성되므로 해금 종류 수에 따라 개별 종류 확률이 달라질 수 있습니다. 확률은 소수점 여섯 자리까지 반올림합니다.</p>
 
@@ -117,7 +117,7 @@
 <p>비용: 원석 가루 5 × 등급 수치(일반 5, 희귀 10, 영웅 15, 전설 20, 신화 25). 등급 유지 100%. 같은 장비 그룹의 해금 종류 중 현재 종류·중복 장착 제한에 걸리는 종류를 제외하고 균등 추첨합니다. 후보를 본 뒤 새 효과 적용 또는 기존 유지를 선택하며, 유지해도 원석 가루는 반환되지 않습니다. 재련 버튼을 누르면 비용 소비 전에 이번 후보별 확률을 표시합니다.</p>
 
 <h2>4. 스테이지 클리어 보상</h2>
-<p>클리어 성공 1회 기준이며 실패 시 지급하지 않습니다. 스테이지의 보상 등급(티어)은 일반 1~100 스테이지를 10개씩 묶어 1~10, 어려움 1~100 스테이지를 10개씩 묶어 11~20입니다. 다이아는 전투 보상에서 나오지 않으며 정기 우편·이벤트·상점에서 얻습니다.</p>
+<p>클리어 성공 1회 기준이며 실패 시 지급하지 않습니다. 스테이지의 보상 등급(티어)은 스테이지 번호 1~300(1부 1~100 · 2부 101~200 · 3부 201~300)을 10개씩 묶어 1~30입니다. 티어 = 1 + (스테이지 번호 − 1) ÷ 10(소수점 버림). 다이아는 전투 보상에서 나오지 않으며 정기 우편·이벤트·상점에서 얻습니다.</p>
 <div class="scroll"><table>
 <tr><th>항목</th><th>공식</th></tr>
 <tr><td>행운 판정</td><td>5% + 1% × 티어 (행운이면 숙련·장비재료·마석·원석 가루·복구 자재 2배)</td></tr>
@@ -125,31 +125,42 @@
 <tr><td>최초 클리어 기본 수량</td><td>장비재료 8 + 2×티어, 마석 5 + 티어, 원석 가루 2 + 티어÷2, 복구 자재 3 + 티어 (÷는 소수점 버림)</td></tr>
 <tr><td>반복 클리어 기본 수량</td><td>장비재료 3 + 티어, 마석 2 + 티어÷2, 원석 가루 1 + 티어÷2, 복구 자재 1 + 티어÷2</td></tr>
 <tr><td>소탕</td><td>반복 보상을 추첨한 뒤 60%로 반올림(양수는 최소 1). 추가 원석 0%</td></tr>
-<tr><td>반복 직접 전투 추가 원석</td><td>행운이면 1개 100%, 아니면 8%. 등급은 전투 드롭 표(일반 70% / 희귀 25% / 영웅 5%), 종류 후보는 원석 소환과 같음(소환 보너스 누적과 무관)</td></tr>
+<tr><td>최초 직접 클리어 원석</td><td>원석 1개 확정(행운이어도 1개). 각 부 50·100 스테이지는 영웅 100%, 그 밖의 보스 스테이지(5·10·15…)는 희귀 100%, 나머지 스테이지는 일반 (100 − p)% / 희귀 p%, p = 15% + 20% × (티어 − 1) ÷ 29 (티어 1 = 15%, 티어 30 = 35%). 종류는 해금 원석 중 균등(소환 보너스 누적과 무관)</td></tr>
+<tr><td>반복 직접 전투 추가 원석</td><td>행운이면 1개 100%, 아니면 20%. 행운이 아니면 마석을 추첨량보다 1개 적게(최소 0개) 지급. 등급은 전투 드롭 표(일반 70% / 희귀 25% / 영웅 5%), 종류 후보는 원석 소환과 같음(소환 보너스 누적과 무관)</td></tr>
 <tr><td>반복 직접 전투 추가 원석 가루</td><td>일반 1개 / 행운 3개. 최초 클리어·소탕은 0개</td></tr>
 </table></div>
 <div class="scroll"><table>
 <tr><th>티어</th><th>스테이지</th><th>행운</th></tr>
-<tr><td>1</td><td>일반 1~10</td><td>6%</td></tr>
-<tr><td>2</td><td>일반 11~20</td><td>7%</td></tr>
-<tr><td>3</td><td>일반 21~30</td><td>8%</td></tr>
-<tr><td>4</td><td>일반 31~40</td><td>9%</td></tr>
-<tr><td>5</td><td>일반 41~50</td><td>10%</td></tr>
-<tr><td>6</td><td>일반 51~60</td><td>11%</td></tr>
-<tr><td>7</td><td>일반 61~70</td><td>12%</td></tr>
-<tr><td>8</td><td>일반 71~80</td><td>13%</td></tr>
-<tr><td>9</td><td>일반 81~90</td><td>14%</td></tr>
-<tr><td>10</td><td>일반 91~100</td><td>15%</td></tr>
-<tr><td>11</td><td>어려움 1~10</td><td>16%</td></tr>
-<tr><td>12</td><td>어려움 11~20</td><td>17%</td></tr>
-<tr><td>13</td><td>어려움 21~30</td><td>18%</td></tr>
-<tr><td>14</td><td>어려움 31~40</td><td>19%</td></tr>
-<tr><td>15</td><td>어려움 41~50</td><td>20%</td></tr>
-<tr><td>16</td><td>어려움 51~60</td><td>21%</td></tr>
-<tr><td>17</td><td>어려움 61~70</td><td>22%</td></tr>
-<tr><td>18</td><td>어려움 71~80</td><td>23%</td></tr>
-<tr><td>19</td><td>어려움 81~90</td><td>24%</td></tr>
-<tr><td>20</td><td>어려움 91~100</td><td>25%</td></tr>
+<tr><td>1</td><td>1부 1~10</td><td>6%</td></tr>
+<tr><td>2</td><td>1부 11~20</td><td>7%</td></tr>
+<tr><td>3</td><td>1부 21~30</td><td>8%</td></tr>
+<tr><td>4</td><td>1부 31~40</td><td>9%</td></tr>
+<tr><td>5</td><td>1부 41~50</td><td>10%</td></tr>
+<tr><td>6</td><td>1부 51~60</td><td>11%</td></tr>
+<tr><td>7</td><td>1부 61~70</td><td>12%</td></tr>
+<tr><td>8</td><td>1부 71~80</td><td>13%</td></tr>
+<tr><td>9</td><td>1부 81~90</td><td>14%</td></tr>
+<tr><td>10</td><td>1부 91~100</td><td>15%</td></tr>
+<tr><td>11</td><td>2부 101~110</td><td>16%</td></tr>
+<tr><td>12</td><td>2부 111~120</td><td>17%</td></tr>
+<tr><td>13</td><td>2부 121~130</td><td>18%</td></tr>
+<tr><td>14</td><td>2부 131~140</td><td>19%</td></tr>
+<tr><td>15</td><td>2부 141~150</td><td>20%</td></tr>
+<tr><td>16</td><td>2부 151~160</td><td>21%</td></tr>
+<tr><td>17</td><td>2부 161~170</td><td>22%</td></tr>
+<tr><td>18</td><td>2부 171~180</td><td>23%</td></tr>
+<tr><td>19</td><td>2부 181~190</td><td>24%</td></tr>
+<tr><td>20</td><td>2부 191~200</td><td>25%</td></tr>
+<tr><td>21</td><td>3부 201~210</td><td>26%</td></tr>
+<tr><td>22</td><td>3부 211~220</td><td>27%</td></tr>
+<tr><td>23</td><td>3부 221~230</td><td>28%</td></tr>
+<tr><td>24</td><td>3부 231~240</td><td>29%</td></tr>
+<tr><td>25</td><td>3부 241~250</td><td>30%</td></tr>
+<tr><td>26</td><td>3부 251~260</td><td>31%</td></tr>
+<tr><td>27</td><td>3부 261~270</td><td>32%</td></tr>
+<tr><td>28</td><td>3부 271~280</td><td>33%</td></tr>
+<tr><td>29</td><td>3부 281~290</td><td>34%</td></tr>
+<tr><td>30</td><td>3부 291~300</td><td>35%</td></tr>
 </table></div>
 <p class="note">장비재료·마석의 수량 추첨은 서로 독립이지만 행운 판정을 공유합니다. 숙련 수량과 스테이지별 정확한 수량 분포는 게임 안 스테이지 도움말에 표시됩니다.</p>
 
@@ -176,6 +187,7 @@
   <li>2026-10-09 게임 버전 1.0.97 기준 개정: 수호령 전설 보너스 신설(소환 100회마다 전설 1마리 추가, 1.0.97부터 적용·기존 소환 횟수 소급 없음)과 영웅·전설 보너스 조건·평균 지급량·10회 소환 조건부 확률 명시. 원석 신화 행에 획득 경로(합성·원석 가루 등급업) 표기. 정정: 원석 분해 가루(영웅 5·전설 12·신화 20), 수호령 분해 환급(80%), 운영 우편 선물(다이아 5 확정 + 4종 33.333333/33.333333/22.222222/11.111111%).</li>
   <li>2026-10-08 게임 버전 1.0.85 기준 개정: 확률 수치 변경 없음. 같은 수호령을 사본 대신 한 마리씩 따로 보관(레벨·진화는 개체별)하도록 바꾸고, 수호령 합성 재료를 '배치하지 않은 같은 등급 Lv.1 수호령 3마리(종류별 마지막 1마리 포함)'로 변경, [가루로 바꾸기]를 분해로 통합. 원석 분해(확정 지급) 추가.</li>
   <li>2026-10-19 게임 버전 1.0.143 기준 개정: 상위 등급 확률 하향. 수호령 소환 매회 확률 64/28/7/1%(옛 54/30/13/3%), 영웅 보너스 40회마다(옛 30회)·전설 보너스 120회마다(옛 100회). 원석 소환 매회 확률 75/21/3.5/0.5%(옛 65/25/9/1%), 영웅 보너스 40회마다(옛 20회)·전설 보너스 200회마다(옛 100회). 원석 합성 성공 확률 영웅 → 전설 40%·전설 → 신화 30%(옛 50%·40%). 조정 이전 누적은 다음 보너스까지 남은 횟수를 유지. 수호령 합성 확률은 변경 없음.</li>
+  <li>2026-10-27 스테이지 클리어 보상 개정: 최초 직접 클리어마다 원석 1개 확정 지급(각 부 50·100 스테이지 영웅, 그 밖의 보스 스테이지 희귀, 나머지는 티어에 따라 희귀 15~35%) 추가, 반복 직접 전투 추가 원석 8% → 20%(행운이 아니면 마석 1개 상쇄), 티어 설명을 1~300 스테이지·티어 1~30으로 정정.</li>
 </ul>
 <p class="note">확률이나 상품 구성이 바뀌면 게임 업데이트와 함께 이 페이지의 기준일과 이력을 갱신합니다.</p>
 </section>
@@ -183,7 +195,7 @@
 <section id="en" lang="en">
 <nav class="meta" aria-label="English legal pages"><a href="index.html#en">Privacy Policy</a> · <a href="terms.html#en">Terms of Service</a> · <a href="probability.html#en">Probabilities</a> · <a href="delete-data.html#en">Data Deletion</a> · <a href="#ko" lang="ko">한국어</a></nav>
 <h1>RiftHunter Probability Disclosure</h1>
-<p class="meta">Based on version 1.0.143; revised 2026-10-19 · Applies to version 1.0.143 and later (Legendary Spirit bonus from 1.0.97) · English translation added: 2026-10-25 · Operator: playfreejjong (플레이프리쫑) · Contact: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
+<p class="meta">Revised 2026-10-27 · Applies to version 1.0.143 and later (Legendary Spirit bonus from 1.0.97; first-clear Gems and the 20% repeat-battle Gem chance apply from the first game update after 2026-10-27) · English translation added: 2026-10-25 · Operator: playfreejjong (플레이프리쫑) · Contact: <a href="mailto:playfreejjong@gmail.com">playfreejjong@gmail.com</a></p>
 <p>This page discloses random-item probabilities under Article 33(2) of Korea's Game Industry Promotion Act and its Enforcement Decree. The same information is available in Settings &gt; Odds, the Gem summon screen and stage help. In-game information is generated from the actual draw tables, so individual item probabilities vary with the number of unlocked types. Percentages are rounded to 6 decimal places.</p>
 <h2>0. Which features include paid random items?</h2>
 <ul>
@@ -264,7 +276,7 @@
 <h2>3. Gem reforging</h2>
 <p>Cost: 5 Gem Dust × rarity value (Common 5, Rare 10, Epic 15, Legendary 20, Mythic 25). Rarity is preserved with 100% certainty. A type is selected equally among unlocked types in the same equipment group, excluding the current type and types disallowed by duplicate-equipment restrictions. After seeing the candidate, choose its effect or keep the current one. Gem Dust is not refunded if you keep the current effect. Pressing Reforge displays each candidate's probability before spending the cost.</p>
 <h2>4. Stage-clear rewards</h2>
-<p>These rules apply to 1 successful clear; failure grants no clear reward. Reward tiers are 1–10 for Normal stages 1–100, in groups of 10 stages, and 11–20 for Hard stages 1–100, likewise in groups of 10. Diamonds do not drop as battle rewards; obtain them through scheduled mail, events and the shop.</p>
+<p>These rules apply to 1 successful clear; failure grants no clear reward. Reward tiers are 1–30 for stage numbers 1–300 (Part 1: 1–100, Part 2: 101–200, Part 3: 201–300) in groups of 10 stages: tier = 1 + (stage number − 1) ÷ 10, discarding fractions. Diamonds do not drop as battle rewards; obtain them through scheduled mail, events and the shop.</p>
 <div class="scroll"><table>
 <tr><th>Item</th><th>Formula</th></tr>
 <tr><td>Lucky roll</td><td>5% + 1% × tier (Lucky doubles Mastery, Gear Materials, Mana Stones, Gem Dust and Repair Materials)</td></tr>
@@ -272,31 +284,42 @@
 <tr><td>First-clear base quantities</td><td>Gear Materials 8 + 2×tier; Mana Stones 5 + tier; Gem Dust 2 + tier÷2; Repair Materials 3 + tier (division discards fractions)</td></tr>
 <tr><td>Repeat-clear base quantities</td><td>Gear Materials 3 + tier; Mana Stones 2 + tier÷2; Gem Dust 1 + tier÷2; Repair Materials 1 + tier÷2</td></tr>
 <tr><td>Sweep</td><td>Roll repeat rewards, multiply by 60% and round (positive quantities have a minimum of 1). Additional Gem chance: 0%.</td></tr>
-<tr><td>Additional Gem in a directly played repeat battle</td><td>100% chance of 1 if Lucky; otherwise 8%. Rarity uses the battle-drop table (Common 70% / Rare 25% / Epic 5%). Types match Gem summon candidates; summon bonus counters are unaffected.</td></tr>
+<tr><td>Gem for a directly played first clear</td><td>1 Gem guaranteed (still 1 if Lucky). Stages 50 and 100 of each Part: Epic 100%. Other boss stages (5, 10, 15…): Rare 100%. All other stages: Common (100 − p)% / Rare p%, where p = 15% + 20% × (tier − 1) ÷ 29 (tier 1 = 15%, tier 30 = 35%). The type is chosen equally among unlocked Gems; summon bonus counters are unaffected.</td></tr>
+<tr><td>Additional Gem in a directly played repeat battle</td><td>100% chance of 1 if Lucky; otherwise 20%. Without Lucky, Mana Stones are 1 fewer than rolled (minimum 0). Rarity uses the battle-drop table (Common 70% / Rare 25% / Epic 5%). Types match Gem summon candidates; summon bonus counters are unaffected.</td></tr>
 <tr><td>Additional Gem Dust in a directly played repeat battle</td><td>1 normally / 3 if Lucky. First clears and sweeps: 0.</td></tr>
 </table></div>
 <div class="scroll"><table>
 <tr><th>Tier</th><th>Stages</th><th>Lucky chance</th></tr>
-<tr><td>1</td><td>Normal 1–10</td><td>6%</td></tr>
-<tr><td>2</td><td>Normal 11–20</td><td>7%</td></tr>
-<tr><td>3</td><td>Normal 21–30</td><td>8%</td></tr>
-<tr><td>4</td><td>Normal 31–40</td><td>9%</td></tr>
-<tr><td>5</td><td>Normal 41–50</td><td>10%</td></tr>
-<tr><td>6</td><td>Normal 51–60</td><td>11%</td></tr>
-<tr><td>7</td><td>Normal 61–70</td><td>12%</td></tr>
-<tr><td>8</td><td>Normal 71–80</td><td>13%</td></tr>
-<tr><td>9</td><td>Normal 81–90</td><td>14%</td></tr>
-<tr><td>10</td><td>Normal 91–100</td><td>15%</td></tr>
-<tr><td>11</td><td>Hard 1–10</td><td>16%</td></tr>
-<tr><td>12</td><td>Hard 11–20</td><td>17%</td></tr>
-<tr><td>13</td><td>Hard 21–30</td><td>18%</td></tr>
-<tr><td>14</td><td>Hard 31–40</td><td>19%</td></tr>
-<tr><td>15</td><td>Hard 41–50</td><td>20%</td></tr>
-<tr><td>16</td><td>Hard 51–60</td><td>21%</td></tr>
-<tr><td>17</td><td>Hard 61–70</td><td>22%</td></tr>
-<tr><td>18</td><td>Hard 71–80</td><td>23%</td></tr>
-<tr><td>19</td><td>Hard 81–90</td><td>24%</td></tr>
-<tr><td>20</td><td>Hard 91–100</td><td>25%</td></tr>
+<tr><td>1</td><td>Part 1 1–10</td><td>6%</td></tr>
+<tr><td>2</td><td>Part 1 11–20</td><td>7%</td></tr>
+<tr><td>3</td><td>Part 1 21–30</td><td>8%</td></tr>
+<tr><td>4</td><td>Part 1 31–40</td><td>9%</td></tr>
+<tr><td>5</td><td>Part 1 41–50</td><td>10%</td></tr>
+<tr><td>6</td><td>Part 1 51–60</td><td>11%</td></tr>
+<tr><td>7</td><td>Part 1 61–70</td><td>12%</td></tr>
+<tr><td>8</td><td>Part 1 71–80</td><td>13%</td></tr>
+<tr><td>9</td><td>Part 1 81–90</td><td>14%</td></tr>
+<tr><td>10</td><td>Part 1 91–100</td><td>15%</td></tr>
+<tr><td>11</td><td>Part 2 101–110</td><td>16%</td></tr>
+<tr><td>12</td><td>Part 2 111–120</td><td>17%</td></tr>
+<tr><td>13</td><td>Part 2 121–130</td><td>18%</td></tr>
+<tr><td>14</td><td>Part 2 131–140</td><td>19%</td></tr>
+<tr><td>15</td><td>Part 2 141–150</td><td>20%</td></tr>
+<tr><td>16</td><td>Part 2 151–160</td><td>21%</td></tr>
+<tr><td>17</td><td>Part 2 161–170</td><td>22%</td></tr>
+<tr><td>18</td><td>Part 2 171–180</td><td>23%</td></tr>
+<tr><td>19</td><td>Part 2 181–190</td><td>24%</td></tr>
+<tr><td>20</td><td>Part 2 191–200</td><td>25%</td></tr>
+<tr><td>21</td><td>Part 3 201–210</td><td>26%</td></tr>
+<tr><td>22</td><td>Part 3 211–220</td><td>27%</td></tr>
+<tr><td>23</td><td>Part 3 221–230</td><td>28%</td></tr>
+<tr><td>24</td><td>Part 3 231–240</td><td>29%</td></tr>
+<tr><td>25</td><td>Part 3 241–250</td><td>30%</td></tr>
+<tr><td>26</td><td>Part 3 251–260</td><td>31%</td></tr>
+<tr><td>27</td><td>Part 3 261–270</td><td>32%</td></tr>
+<tr><td>28</td><td>Part 3 271–280</td><td>33%</td></tr>
+<tr><td>29</td><td>Part 3 281–290</td><td>34%</td></tr>
+<tr><td>30</td><td>Part 3 291–300</td><td>35%</td></tr>
 </table></div>
 <p class="note">Gear Material and Mana Stone quantity rolls are independent but share the Lucky roll. Mastery amounts and exact per-stage quantity distributions appear in stage help in the game.</p>
 <h2>5. Free operator gift mail</h2>
@@ -320,6 +343,7 @@
 <li>2026-10-09, version 1.0.97: Added the Legendary Spirit bonus every 100 summons, effective from 1.0.97 without retroactive counts. Clarified bonus conditions, average quantities and conditional 10-summon probabilities. Added Mythic Gem acquisition methods (Fusion and Gem Dust upgrades). Corrected Gem dismantling Dust (Epic 5 / Legendary 12 / Mythic 20), Spirit dismantling refund (80%), and operator gifts (5 guaranteed Diamonds plus 1 of 4 rewards at 33.333333/33.333333/22.222222/11.111111%).</li>
 <li>2026-10-08, version 1.0.85: No probability changes. Duplicate Spirits became separate individuals with individual levels/evolution. Spirit Fusion materials changed to 3 undeployed Lv.1 Spirits of the same rarity, including a type's last owned Spirit. Convert to Dust was consolidated into Dismantle. Added guaranteed Gem dismantling.</li>
 <li>2026-10-19, version 1.0.143: Reduced higher-rarity probabilities. Spirit rates changed from 54/30/13/3% to 64/28/7/1%; Epic bonus from 30 to 40 summons and Legendary from 100 to 120. Gem rates changed from 65/25/9/1% to 75/21/3.5/0.5%; Epic bonus from 20 to 40 summons and Legendary from 100 to 200. Gem Fusion Epic→Legendary success changed from 50% to 40%, and Legendary→Mythic from 40% to 30%. Existing counters preserve summons remaining to the next bonus. Spirit Fusion probabilities did not change.</li>
+<li>2026-10-27: Stage-clear rewards revised. Added 1 guaranteed Gem for every directly played first clear (Epic on stages 50 and 100 of each Part, Rare on other boss stages, otherwise Rare 15–35% by tier). The additional Gem chance in directly played repeat battles rose from 8% to 20%, with 1 fewer Mana Stone when not Lucky. Corrected the tier description to stages 1–300 and tiers 1–30.</li>
 </ul>
 <p class="note">When probabilities or product contents change, this page's reference date and history are updated with the game update.</p>
 </section>
