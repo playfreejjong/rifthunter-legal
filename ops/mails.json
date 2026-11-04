@@ -1,3 +1,19 @@
 {
-    "mails": []
+    "mails": [
+        {
+            "id": "promo_riftplay500_20261109",
+            "targetUserId": "",
+            "sender": "균열의 헌터 운영팀",
+            "title": "11월 9일 시작 · 다이아 500개 선물",
+            "body": "다이아 500개를 드리는 7일 쿠폰 행사를 준비했어요!\n\n등록 기간: 2026년 11월 9일 00:00 ~ 11월 16일 00:00 (한국 시각)\n쿠폰 코드: RIFTPLAY500\n입력 위치: 설정 > 쿠폰 입력\n\n신규·기존 이용자 모두 연결된 Google Play 게임즈 계정당 1회, 전체 수량 제한 없이 참여할 수 있어요. 인터넷 연결과 개인 우편·쿠폰 이용 동의가 필요해요. 등록 후 발급되는 개인 우편을 7일 안에 직접 수령해 주세요. 이 안내 우편에는 보상이 들어 있지 않아요.\n\n500 Diamonds gift: Nov 9 00:00–Nov 16 00:00, 2026 (Korean time). Enter RIFTPLAY500 in Settings > Enter Coupon. One redemption per linked Google Play Games account, no total limit, no purchase required. Internet connection and Personal Mail & Coupon Consent required. Claim the reward mail within 7 days of issue. This notice contains no reward.",
+            "crystal": 0,
+            "stones": 0,
+            "equipMaterial": 0,
+            "gems": 0,
+            "stamina": 0,
+            "announce": true,
+            "expiresDays": 14,
+            "untilDate": "2026-11-16T00:00:00+09:00"
+        }
+    ]
 }
