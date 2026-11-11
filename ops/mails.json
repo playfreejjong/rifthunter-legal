@@ -11,7 +11,7 @@
             "equipMaterial": 0,
             "gems": 0,
             "stamina": 0,
-            "announce": true,
+            "announce": false,
             "expiresDays": 14,
             "untilDate": "2026-11-16T00:00:00+09:00"
         }
